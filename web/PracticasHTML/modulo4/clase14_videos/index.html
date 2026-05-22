@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video y audio</title>
+</head>
+<body>
+    <!-- <video src="multimedia/videoplayback (1).mp4" controls width="600" height="400"></video> -->
+
+    <div>
+        <h2>Videos en mp4 y mov con un banner:</h2>
+        <p>dependiendo su navegador es el que se va a cargar, investigué y si usa chrome le cargará el mov porque es más compatible</p>
+        <video width="600" height="400" controls poster="IMG/bannerHola.jpg" preload="auto">
+        <source src="multimedia/videoplayback.mp4" type="video/mp4">
+        <source src="multimedia/videoplayback.mov" type="video/mov">
+        Su navegador no soporta formatos de video
+    </video>
+    </div>
+   
+    <div>
+        <h2>Audio en formato mp3:</h2>
+         <audio src="multimedia/Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster).mp3" type="audio/mpeg" controls>
+        Tu navegador no soporta audio html5
+    </audio>
+    </div>
+
+    <div>
+        <h2>Video desde youtube:</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NhKVUFVCjnA?si=MKYRiPvmZiidBUcb&amp;start=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+</body>
+</html>

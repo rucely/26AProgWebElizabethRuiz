@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Práctica: Position CSS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <p>En esta práctica vimos algunas de las posiciones que se pueden aplicar</p>
+  <!-- EJEMPLO 1: POSITION RELATIVE -->
+  <h2>1. Position Relative</h2>
+  <p>Esta mueve un elemento ya sea en el top, bottom, left o right pero siempre en su espacio que se le asignó, respeta el de los demás elementos</p>
+  <div class="contenedor">
+    <div class="caja">Normal</div>
+    <div class="caja caja-relative">Relative</div>
+    <div class="caja">Normal</div>
+  </div>
+
+  <!-- EJEMPLO 2: POSITION ABSOLUTE -->
+   <p>Este tambien se mueve pero no respeta el espacio de los demás, se interpone</p>
+  <h2>2. Position Absolute</h2>
+  <div class="contenedor-padre">
+    <div class="hijo-absolute">Absolute</div>
+    <p>Contenido del padre</p>
+  </div>
+
+  <!-- EJEMPLO 3: POSITION FIXED -->
+  <h2>3. Position Fixed</h2>
+  <p>este es el que más me pareció interesante ya que dió un ejemlo con lo que lo relacioné, que fue el botón fijo como cuando estas en una página y hay un chat en la esquina derecha preguntando si necesitas ayuda</p>
+  <p>Scroll para ver el botón fixed →</p>
+  <button class="boton-fixed">Fixed</button>
+
+  <!-- EJEMPLO 4: POSITION STICKY -->
+  <h2>4. Position Sticky</h2>
+  <p>aqui es algo similar al fixed, la diferencia principal es que es más que nada para el navegador, que te aparezca hasta que llegas a el, y que una vez que bajes lo sigas viendo</p>
+  <div class="contenedor-scroll">
+    <p>Contenido antes</p>
+    <div class="elemento-sticky">STICKY</div>
+    <p>Contenido después</p>
+    <p>Más contenido...</p>
+    <p>Más contenido...</p>
+    <p>Más contenido...</p>
+    <p>Más contenido...</p>
+    <p>Más contenido...</p>
+    <p>Más contenido...</p>
+    <p>Más contenido...</p>
+    <p>Más contenido...</p>
+    <p>Más contenido...</p>
+    <p>Más contenido...</p>
+  </div>
+
+  <!-- EJEMPLO 5: Z-INDEX -->
+  <h2>5. Z-Index</h2>
+  <p>en este lo vi mas como una mezcla de todo pero con coordenadas por elemento para mejor control</p>
+  <div class="contenedor-zindex">
+    <div class="capa capa-1">z-index: 1</div>
+    <div class="capa capa-2">z-index: 2</div>
+    <div class="capa capa-3">z-index: 3</div>
+  </div>
+</body>
+
+</html>

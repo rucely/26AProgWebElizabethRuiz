@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validaciones</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <div>
+        <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required placeholder="user@ejemplo.com">
+    </div>
+
+    <div>
+        <label for="telefono">Telefono</label>
+        <input type="tel" id="telefono" name="Telefono" placeholder="1234567890" title="ingresa 9 digitos"
+        pattern="[0-9]{9}">
+    </div>
+    
+    <div>
+        <label for="cantidad">Cantidad</label>
+        <input type="number" name="cantidad" id="cantidad" min="1" max="100">
+    </div>
+
+    <div>
+        <label for="fecha">Fecha:</label>
+        <input type="date" name="fecha" id="fecha" min="2025-01-01" max="2025-12-31">
+    </div>
+
+    <div>
+        <label for="contraseña">Contraseña (minimo 8 caracteres):</label>
+        <input type="password" name="contraseña" id="contraseña" required minlength="8">
+    </div>
+
+    <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>

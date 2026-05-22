@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Básico -->
+  <title>Elizabeth Ruiz - Mi Perfil Personal | Desarrollador Web en Formación</title>
+  <meta name="description"
+    content="Perfil personal de Elizabeth Ruiz. Desarrollador Web en formación aprendiendo HTML, proximamente css, y a la vez aprendiendo de vagrant.">
+  <meta name="keywords" content="perfil personal, desarrollador web, portfolio, HTML, CSS, desarrollo web">
+  <meta name="author" content="Elizabeth Ruiz">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<body>
+  <!-- 
+    ========================================
+    HEADER PRINCIPAL
+    ========================================
+    -->
+
+  <header role="banner">
+    <!-- Logo y Marca Personal -->
+    <div class="brand">
+      <a href="/" aria-label="Mi Perfil Personal - Inicio">
+        <img src="mu" alt="Mi Perfil Personal" width="48" height="48">
+        <span>Mi Perfil Personal</span>
+      </a>
+    </div>
+
+    <!-- Navegación Principal -->
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="/" aria-current="page">Inicio</a></li>
+        <li><a href="/sobre-mi.html">Sobre mí</a></li>
+        <li><a href="/habilidades.html">Habilidades</a></li>
+        <li><a href="/proyectos.html">Proyectos</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Acciones Rápidas -->
+    <div class="header-actions">
+      <a href="/assets/documents/cv-diego-degranda.pdf" download aria-label="Descargar CV en PDF">
+        📄 CV
+      </a>
+
+      <!-- Selector de Idioma -->
+      <select aria-label="Seleccionar idioma">
+        <option value="es" selected>ES</option>
+        <option value="en">EN</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- 
+    ========================================
+    CONTENIDO PRINCIPAL
+    ========================================
+    -->
+
+  <main id="contenido-principal" role="main">
+
+    <!-- Hero Section -->
+    <section aria-labelledby="hero-titulo">
+      <h1 id="hero-titulo">Hola profe, este es mi proyecto final</h1>
+      <p><strong>Desarrollador Web en Formación</strong></p>
+      <p>
+        Aprendí lo básico de HTML, (proxiamente tambien CSS) para crear sitios web bonitos
+        y funcionales, además para acreditar la materia jiji.
+      </p>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section aria-labelledby="about-titulo">
+      <h2 id="about-titulo">Quien soy?</h2>
+
+      <p>
+        Soy <strong>estudiante de sistemas</strong>,
+        actualmente aprendiendo HTML y CSS para esta materia.
+      </p>
+
+      <p>
+       No es la primera vez que trabajo en desarrollo web, sin embargo este curso me ha ayudado a conocer y sobre todo reforzar cosas que desconocía o ignoraba.
+      </p>
+
+      <blockquote>
+        <p>
+          Domina para transformar
+        </p>
+        <cite>— Diego de granda, Platzi</cite>
+      </blockquote>
+
+      <!-- Valores Personales -->
+      <h3>Lo que más llamó mi atención</h3>
+      <dl>
+        <dt>📽️ Videos</dt>
+        <dd>Poder agregar videos desde youtube y además desde un segundo en especifico</dd>
+
+        <dt>🫂 Atributos ARIA</dt>
+        <dd>Al principio la verdad no entendía la necesidad, después me di cuenta de que se usa en consideración a las pesonas con una discapacidad y entendí su importancia, sin duda lo aplicaré</dd>
+
+        <dt>🤓 Multicidad</dt>
+        <dd>Subestimé a html porque te da muchas facilidades en cuanto a reglas para código, sin embargo esta ocasión me di cuenta de que existen multiples etiquetas y waw</dd>
+      </dl>
+    </section>
+
+    
+
+        <h3>Mi Primer Sitio Web</h3>
+        <p>
+          Mi primer proyecto completo usando HTML y CSS. Una página
+          simple pero bien estructurada donde apliqué los conceptos
+          básicos aprendidos.
+        </p>
+
+        <h4>Lo que aprendí en este curso:</h4>
+        <ul>
+          <li>Estructura semántica de HTML</li>
+          <li>Manejo eficiente de imagenes</li>
+          <li>Principios básicos de accesibilidad</li>
+        </ul>
+
+        <a href="/proyectos/primer-sitio.html">
+          Ver detalles del proyecto
+        </a>
+      </article>
+    </section>
+
+    <!-- Habilidades Técnicas -->
+    <section aria-labelledby="skills-titulo">
+      <h2 id="skills-titulo">Habilidades</h2>
+
+      <h3>Tecnologías que estoy aprendiendo</h3>
+      <ul>
+        <li>
+          <img src="multimed" alt="" width="40" height="40" aria-hidden="true">
+          <span>.Net</span>
+          <progress value="50" max="100" aria-label="50% de dominio">
+            50%
+          </progress>
+        </li>
+        <li>
+          <img src="/assets/icons/css3.svg" alt="" width="40" height="40" aria-hidden="true">
+          <span>C#</span>
+          <progress value="40" max="100" aria-label="40% de dominio">
+            40%
+          </progress>
+        </li>
+      </ul>
+    </section>
+
+
+  </main>
+
+  <!-- 
+    ========================================
+    FOOTER COMPLETO
+    ========================================
+    -->
+
+  <footer role="contentinfo">
+    <!-- Sobre Mi Perfil Personal -->
+    <section aria-labelledby="footer-about">
+      <h2 id="footer-about">Proyecto final</h2>
+      <p>
+        Footer del proyecto final
+      </p>
+
+    <!-- Enlaces del Footer -->
+    <nav aria-label="Enlaces del footer">
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/sobre-mi.html">Sobre mí</a></li>
+        <li><a href="/proyectos.html">Proyectos</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contacto -->
+    <section aria-labelledby="footer-contact">
+      <h2 id="footer-contact">Contacto</h2>
+      <address>
+        <dl>
+          <dt>Email:</dt>
+          <dd>
+            <a href="mailto:pv220110113@vallarta.tecmm.edu.mx">
+              elizabethruiz@correo.com
+            </a>
+          </dd>
+
+          <dt>GitHub:</dt>
+          <dd>
+            <a href="https://github.com/rucely" target="_blank" rel="noopener">
+              elizabethruiz
+            </a>
+          </dd>
+
+          <dt>Ubicación:</dt>
+          <dd>Puerto Vallarta, Jalisco</dd>
+        </dl>
+      </address>
+    </section>
+
+      <!-- Descargas -->
+      <a href="multimedia/CvFakeElizabeth.pdf" download>
+        📄 Descargar mi CV (PDF)
+      </a>
+    </section>
+
+    <!-- Footer Bottom -->
+    <div>
+      <p>&copy; Marzo 2026 - Proyecto Final Elizabeth. Todos los derechos reservados.</p>
+
+      <nav aria-label="Enlaces legales">
+        <a href="/privacidad.html">Privacidad</a>
+        <a href="/terminos.html">Términos</a>
+        <a href="/accesibilidad.html">Accesibilidad</a>
+      </nav>
+
+      <p>
+        Yo elegí el contenido ya que el curso no dió como tal la estructura
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

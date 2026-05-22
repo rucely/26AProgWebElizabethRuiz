@@ -1,0 +1,32 @@
+/* ... (Reset y Box Model se mantienen igual) ... */
+
+/* --- 2. Unidades y Colores (CLASE 15: VARIABLES CSS) --- */
+:root {
+  --primary: #020202; 
+  --accent: #b9104b; 
+  --bg-light: #f3f4f6;
+  --main-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Tu variable de sombra */
+}
+
+/* ... (Header y Hero se mantienen) ... */
+
+/* --- 10. Módulo 3: Sombras y Bordes (CLASE 17) --- */
+
+.hero__title {
+  font-family: "Archivo Black";
+  font-size: 4rem;
+  /* Aplicando sombra de texto para mayor profundidad */
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2); 
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 1.5rem;
+  /* Uso de variables y bordes redondeados */
+  border-radius: 8px;
+  box-shadow: var(--main-shadow);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* ... (Resto de tus estilos se mantienen intactos) ... */

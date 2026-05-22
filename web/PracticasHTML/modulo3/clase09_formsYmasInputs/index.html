@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más inputs</title>
+</head>
+<body>
+    <form action="" method="post"></form>
+    <div>
+        <p>Un input de tipo password porque lo que escribas se verá con asteriscos:</p>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password">
+    </div>
+
+    <div>
+        <p>Input de tipo number al que además se le añadió un rango, no dejará una edad de menos de 18 ni mas de 70:</p>
+        <label for="Edad">Edad:</label>
+        <input type="number" name="Edad" id="Edad" min="18" max="70">
+    </div>
+
+    <div>
+        <p>Input para seleccionar la fecha con un calendario:</p>
+        <label for="fecha">Fecha:</label>
+        <input type="date" name="fechanac" id="fecha">
+    </div>
+
+    <div>
+        <p>Input para que el usuario envie un color</p>
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color">
+    </div>
+
+    <div>
+        <p>Agrupación con fieldset y radiobutton:</p>
+        <fieldset>
+            <legend>Genero:</legend>
+            <input type="radio" name="genero" id="masculino" value="M">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" name="genero" id="femenino" value="F">
+            <label for="femenino">Femenino</label>
+
+            <input type="radio" name="genero" id="Otro" value="O">
+            <label for="Otro">Otro</label>
+        </fieldset>
+    </div>
+    
+
+</body>
+</html>

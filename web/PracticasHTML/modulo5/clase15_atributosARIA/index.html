@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesabilidad</title>
+</head>
+<body>
+
+    <button aria-label="Cerrar ventana">x</button>
+
+    <header>
+        <nav aria-label="Menú principal"> 
+            <a href="#inicio">Inicio</a>
+            <a href="productos">Productos</a>
+        </nav>
+    </header>
+    <p>Hola profe, esta practica fue más que nada de cosas internas, sobre los atributos Aria y los roles.
+        Los aria son más que nada para las personas que no ven o que tienen dificultades, son como orientación.
+        Y los roles son para cuando ya se te dificulta seguir la semantica, que ya tienes demasiado codigo
+    </p>
+
+    <input type="search" aria-label="Buscador de productos" name="" id="">
+
+    <label for="password">Contraseña</label>
+    <input type="password" id="password" aria-describedby="password-help">
+    <small id="password-help"> 
+        Minimo 8 caracteres que incluyan numeros y letras
+    </small>
+
+    <img src="grafico.jpg" alt="Ventas 2024" aria-describedby="grafica descripcion">
+    <p id="grafica-descripcion">Las ventas aumentaron un 40% en el Q1</p>
+
+    <div>
+        <h2>Roles</h2>
+        <h3>Contenido principal</h3>
+    </div>
+</body>
+</html>

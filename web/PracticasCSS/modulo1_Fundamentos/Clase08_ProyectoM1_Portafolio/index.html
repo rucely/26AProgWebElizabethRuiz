@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elizabeth Ruiz - Mi Perfil Personal | Desarrollador Web</title>
+  <link rel="stylesheet" href="styles.css"/>
+  
+  <meta name="description" content="Perfil personal de Elizabeth Ruiz. Desarrollador Web en formación.">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body class="portfolio">
+
+  <header class="header" role="banner" id="inicio">
+    <div class="header__brand">
+      <a href="#" class="header__link-logo"> <img src="assets/icons/logo.png" alt="Logo" width="48" height="48">
+      </a>
+    </div>
+
+    <nav class="header__nav" aria-label="Navegación principal">
+      <ul class="header__list">
+        <li><a href="#" class="header__item header__item--active">Inicio</a></li>
+        <li><a href="#sobre-mi" class="header__item">Sobre mí</a></li>
+        <li><a href="#habilidades" class="header__item">Habilidades</a></li>
+        <li><a href="#contacto" class="header__item">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <a href="multimedia/CvFakeElizabeth.pdf" class="btn-cv" download>📄 CV</a>
+      <select class="lang-selector" aria-label="Seleccionar idioma">
+        <option value="es" selected>ES</option>
+        <option value="en">EN</option>
+      </select>
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="hero__content">
+        <span class="hero__badge">8vo Semestre</span>
+        <h1 id="hero-titulo" class="hero__title">Continuidad de Proyectos</h1>
+        <p class="hero__subtitle"><strong>Desarrollo de web</strong></p>
+        <p class="hero__desc">
+          Decidí retomar parte de mi proyecto final de html y darle continuidad con lo que vaya aprendiendo de css.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="sobre-mi">
+      <h2 class="section__title">¿Quién soy?</h2>
+      <p>Soy <strong>estudiante de sistemas</strong>, actualmente aprendiendo HTML y CSS para esta materia. No es la primera vez que trabajo en desarrollo web, pero estos cursos me está ayudando a reforzar cosas que ignoraba.</p>
+
+      <blockquote class="quote">
+        <p>Domina para transformar</p>
+        <cite>— Diego de Granda, Platzi</cite>
+      </blockquote>
+
+      <h3>Lo que más ha llamado mi atención hasta este modulo</h3>
+      <dl class="learning-list">
+        <dt class="learning-list__term">➕ Positions</dt>
+        <dd class="learning-list__desc">Aprender que normalmente se usa fixed para los chatbot de ayuda me resultó enriquecedor.</dd>
+        <dt class="learning-list__term">🧐 Uso de clases</dt>
+        <dd class="learning-list__desc">Mantienen todo más ordenado además de ser una gran herramienta para optimizar el diseño.</dd>
+        <dt class="learning-list__term">🥡 Box model</dt>
+        <dd class="learning-list__desc">Lo tomé como el interlineado y herramientas que ayudan a seccionar contenido.</dd>
+        <dt class="learning-list__term">👁️‍🗨️ Uso de unidades modernas</dt>
+        <dd class="learning-list__desc">Importante para que mis trabajos sean incluyentes y accesibles.</dd>
+      </dl>
+    </section>
+
+    <section class="section section--dark">
+      <h2 class="section__title">Implementación Técnica: Módulo 1</h2>
+      <div class="summary-grid">
+        <article class="card">
+          <h4>Pseudo-elementos <code>::before</code></h4>
+          <p>Apliqué contenido dinámico para las comillas usando CSS:</p>
+          <code class="code-snippet">.quote p::before { content: '"'; color: #b9104b; }</code>
+        </article>
+        
+        <article class="card">
+          <h4>Positioning <code>sticky</code></h4>
+          <p>Mantenimiento del header visible durante el scroll:</p>
+          <code class="code-snippet">.header { position: sticky; top: 0; z-index: 1000; }</code>
+        </article>
+
+        <article class="card">
+          <h4>Metodología BEM</h4>
+          <p>Estructura de clases clara para evitar colisiones de estilos:</p>
+          <code class="code-snippet">.learning-list__term { color: var(--accent); }</code>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Aprendizaje previo de mi curso anterior en HTML</h3>
+      <ul>
+        <li>Estructura semántica</li>
+        <li>Manejo de imágenes</li>
+        <li>Accesibilidad</li>
+      </ul>
+      <a href="#" class="btn-link">Ver detalles del proyecto</a>
+    </section>
+
+    <section class="section" id="habilidades">
+      <h2 class="section__title">Habilidades Técnicas Externas</h2>
+      <ul class="skills-list">
+        <li class="skills-list__item">
+          <span>.Net</span>
+          <progress value="50" max="100"></progress>
+        </li>
+        <li class="skills-list__item">
+          <span>C#</span>
+          <progress value="40" max="100"></progress>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacto">
+    <div class="footer__container">
+      <section>
+        <h2>Proyecto en curso</h2>
+        <p>Footer del proyecto en curso para la materia de Programación Web.</p>
+      </section>
+
+      <section>
+        <h2>Contacto</h2>
+        <address>
+          <dl class="footer-contact">
+            <dt>Email:</dt>
+            <dd><a href="mailto:elizabethruiz@correo.com">elizabethruiz@correo.com</a></dd>
+            <dt>GitHub:</dt>
+            <dd><a href="https://github.com/rucely" target="_blank">@rucely</a></dd>
+            <dt>Ubicación:</dt>
+            <dd>Puerto Vallarta, Jalisco</dd>
+          </dl>
+        </address>
+      </section>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; Marzo 2026 - Proyecto Final Elizabeth.</p>
+      <nav>
+        <a href="#">Privacidad</a> | <a href="#">Términos</a>
+      </nav>
+      <p><small>Yo elegí el contenido ya que el curso no dio la estructura.</small></p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+/* --- 1. Reset & Box Model --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Aplicando Box Model */
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* --- 3. Position: Sticky para el Header --- */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+.header__list {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.header__item {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.header__item:hover { /* Pseudo-clase */
+  color: var(--accent);
+}
+
+/* --- 4. Hero con vh y absolute --- */
+
+.hero__title{
+  font-family: "Archivo Black";
+  font-size: 4rem;
+}
+
+.hero {
+  height: 50vh; /* Unidad vh */
+  background: #861e8a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative; /* Para el badge absoluto */
+}
+
+.hero__badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--accent);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+
+/* --- 5. Contenedores (Box Model + Specifity) --- */
+.section {
+  padding: 4rem 10%; /* rem y % */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section--dark {
+  background: var(--bg-light);
+}
+
+
+.section__title {
+  margin-bottom: 2rem;
+  border-bottom: 3px solid var(--accent); /* Box Model border */
+  display: inline-block;
+}
+
+.lists{
+margin-top: 2rem;
+}
+
+.div-mod{
+  margin-top: 1rem;
+}
+
+
+/* Estilo para las Cards del resumen */
+.summary-grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+
+
+/* --- 6. Skills y Progress --- */
+.skills-list {
+  list-style: none;
+}
+
+.skills-list__item {
+  margin-bottom: 1rem;
+}
+
+
+
+progress {
+  width: 100%;
+  height: 20px;
+}
+
+
+
+/* --- 7. Footer Layout --- */
+
+.footer {
+  background: #111;
+  color: white;
+  padding: 3rem 10% 1rem;
+}
+
+
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem; 
+}
+
+.footer-contact dt {
+ font-weight: bold; color: var(--accent);
+}
+
+.footer__bottom {
+ text-align: center;
+ border-top: 1px solid #333;
+ padding-top: 1rem;
+}
+
+.quote{
+padding: 1rem;
+}
+
+.quote p::before{
+content: '"';
+color: #b9104b;
+}
+
+.quote p::after{
+content: '"';
+color: #b9104b;
+}
+
+
+.learning-list__term{
+ color: #b9104b;
+}
+
+/* ... (Toda tu CSS anterior se mantiene igual) ... */
+
+/* Estilos extra para la sección de Implementación Técnica */
+.code-snippet {
+display: block;
+background: #2d2d2d;
+color: #f8f8f2;
+ padding: 10px;
+ border-radius: 4px;
+ font-size: 0.8rem;
+ margin-top: 10px;
+ overflow-x: auto;
+ font-family: 'Courier New', Courier, monospace;
+}
+
+.card h4 {
+ margin-bottom: 10px;
+ color: var(--accent);
+}
+
+.card p {
+ font-size: 0.9rem;
+ margin-bottom: 5px;
+}
+
+/* --- 8. Módulo 2: Tipografía y Legibilidad --- */
+
+/* Aplicando lo aprendido a los párrafos de "Sobre mí" */
+#sobre-mi p {
+    line-height: 1.6; /* Legibilidad: espacio entre líneas */
+    text-align: justify; /* Control de texto: alineación */
+}
+
+/* Ejemplo de indentación (sangría) como viste en el curso */
+#sobre-mi > p {
+    text-indent: 20px; 
+}
+
+/* Estilo para los títulos de los módulos en la lista */
+.div-mod {
+    margin-top: 1.5rem; /* El espacio que necesitabas arriba */
+    font-weight: bold;
+    color: var(--accent);
+    text-transform: uppercase; /* Control de texto: todo en mayúsculas */
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Estilo para la lista principal */
+.lists {
+    margin-top: 1rem;
+}

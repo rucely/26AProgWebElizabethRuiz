@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de imagenes</title>
+</head>
+<body>
+    <header>
+         <p>en esta clase se vieron los diferentes maneras para usar las imagenes y tener un mejor rendimiento, y como no es lo mismo ponerlas para ordenadores como para celulares con el uso de srcset</p>
+        <p>si le da a inspeccionar y juega con los tamaños de pixeles de panatalla, se dará cuenta que hay configuraciones diferentes</p>
+        </header>
+    <main>
+         <img src="img/hero-400.jpg" alt="vista de espiral" srcset="
+         img/hero-400.jpg  400w,
+         img/hero-800.jpg  800w,
+         img/hero-1200.jpg 1200w,
+         " sizes="(max-width: 600px), 100vw, 50vw">
+
+         <picture>
+            <source media="(min-width: 768px)" srcset="img/banner-desktop-800x400.jpg">
+            <source media="(min-width: 480px)" srcset="img/banner-tablet-600x300.jpg">
+            <img src="img/banner-movil-400x200.jpg" alt="plantitas">
+         </picture>
+
+         <img src="img/producto-600.jpg" alt="producto destacado" srcset="img/producto-300.jpg 300w, img/producto-600.jpg 600w" sizes="(max-widt: 600px) 100vw, 600px"
+         loading="lazy"
+         decoding="async"
+         width="600"
+         height="400">
+    </main>
+
+    <footer>
+        <p>me dio pereza seleccionar mis propias imagenes asi que usé los recursos del curso</p>
+    </footer>
+</body>
+</html>

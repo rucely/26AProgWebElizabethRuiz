@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo-clases y Pseudo-elementos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- PSEUDO-CLASES -->
+  <h2>Pseudo-clases</h2>
+  <p>Aqui lo que se hizo fue aprender a cambiar el borde de los input una vez que se seleccionan, poder añadirle estilos independientes a los elementos de una Ul, modificar los elementos de una tabla (lo cual me parece util para poner en otro color la primera fila y la primer columna)</p>
+  <!-- :hover -->
+  <button>Hover me</button>
+
+  <!-- :focus -->
+  <input type="text" placeholder="Click me">
+
+  <!-- :first-child, :last-child -->
+  <ul>
+    <li>Primer item</li>
+    <li>Segundo item</li>
+    <li>Tercer item</li>
+    <li>Último item</li>
+  </ul>
+
+  <!-- :nth-child -->
+  <table>
+    <tr>
+      <td>Fila 1</td>
+    </tr>
+    <tr>
+      <td>Fila 2</td>
+    </tr>
+    <tr>
+      <td>Fila 3</td>
+    </tr>
+    <tr>
+      <td>Fila 4</td>
+    </tr>
+  </table>
+
+  <!-- PSEUDO-ELEMENTOS -->
+  <h2>Pseudo-elementos</h2>
+  <p>Por la parte de los Pseudo-elementos, aprendí que nos ayudan a generar lo que no se puede o no deberia en html, por ejemplo comillas para referencias pero que solo las comillas sean de otro color</p>
+  <!-- ::before y ::after -->
+  <p class="quote">Texto con comillas</p>
+
+  <!-- ::first-letter -->
+  <p class="drop-cap">Lorem ipsum dolor sit amet consectetur.</p>
+
+  <!-- ::first-line -->
+  <p class="highlight-first">Primera línea destacada. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</body>
+
+</html>

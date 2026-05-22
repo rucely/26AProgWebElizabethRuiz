@@ -1,0 +1,288 @@
+/* --- 1. Reset & Box Model --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Aplicando Box Model */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* --- 2. Unidades y Colores --- */
+:root {
+  --primary: #020202; 
+  --accent: #b9104b; 
+  --bg-light: #f3f4f6;
+}
+
+/* --- 3. Position: Sticky para el Header --- */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header__list {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.header__item {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.header__item:hover { /* Pseudo-clase */
+  color: var(--accent);
+}
+
+/* --- 4. Hero con vh y absolute --- */
+.hero__title{
+  font-family: "Archivo Black";
+  font-size: 4rem;
+}
+
+.hero {
+  height: 50vh; /* Unidad vh */
+  background: linear-gradient(135deg, #861e8a 0%, #f63bb2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative; /* Para el badge absoluto */
+}
+
+.hero__badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--accent);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+/* --- 5. Contenedores (Box Model + Specifity) --- */
+.section {
+  padding: 4rem 10%; /* rem y % */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section--dark {
+  background: var(--bg-light);
+}
+
+.section__title {
+  margin-bottom: 2rem;
+  border-bottom: 3px solid var(--accent); /* Box Model border */
+  display: inline-block;
+}
+
+.lists{
+  margin-top: 2rem;
+}
+
+.div-mod{
+  margin-top: 1rem;
+}
+
+/* Estilo para las Cards del resumen */
+.summary-grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* --- 6. Skills y Progress --- */
+.skills-list {
+  list-style: none;
+}
+
+.skills-list__item {
+  margin-bottom: 1rem;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+}
+
+/* --- 7. Footer Layout --- */
+.footer {
+  background: #111;
+  color: white;
+  padding: 3rem 10% 1rem;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem; 
+}
+
+.footer-contact dt {
+ font-weight: bold; color: var(--accent);
+}
+
+.footer__bottom {
+ text-align: center;
+ border-top: 1px solid #333;
+ padding-top: 1rem;
+}
+
+.quote{
+  padding: 1rem;
+}
+
+.quote p::before{
+  content: '"';
+  color: #b9104b;
+}
+
+.quote p::after{
+  content: '"';
+  color: #b9104b;
+}
+
+.learning-list__term{
+ color: #b9104b;
+}
+
+.code-snippet {
+  display: block;
+  background: #2d2d2d;
+  color: #f8f8f2;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.card h4 {
+ margin-bottom: 10px;
+ color: var(--accent);
+}
+
+.card p {
+ font-size: 0.9rem;
+ margin-bottom: 5px;
+}
+
+/* --- 8. Módulo 2: Tipografía --- */
+#sobre-mi p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#sobre-mi > p {
+    text-indent: 20px; 
+}
+
+.div-mod {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    color: var(--accent);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.lists {
+    margin-top: 1rem;
+}
+
+/* --- 9. Módulo 4: Colores y Fondos --- */
+
+/* Aplicando transparencias RGBA para demostrar el tema */
+.card:hover {
+    background-color: rgba(185, 16, 75, 0.05); /* Uso de RGBA */
+}
+
+/* Reforzando propiedades de fondo del Hero */
+.hero {
+    background-image: linear-gradient(135deg, #861e8a 0%, #f63bb2 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Uso de colores HEX específicos para resaltar términos */
+.learning-list__term {
+    color: #b9104b; /* HEX */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Sombra suave con RGBA */
+}
+
+/* ... (Todo tu CSS anterior se mantiene 100% igual) ... */
+
+/* --- 10. Módulo 5: Responsive Design (Clases 24 y 25) --- */
+
+/* Regla de oro para imágenes fluidas (Clase 25) */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Query para Tablets y Celulares (Clase 24) */
+@media (max-width: 768px) {
+    /* Hacemos que el grid de tarjetas sea vertical en pantallas chicas */
+    .summary-grid {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    /* Ajustamos el tamaño del Hero para que no ocupe tanto espacio en cel */
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        height: 40vh;
+    }
+
+    /* Ajustamos el padding de las secciones para pantallas angostas */
+    .section {
+        padding: 2rem 5%;
+    }
+
+    /* El footer container también debería ser vertical */
+    .footer__container {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+}
+
+/* Ajuste extra para celulares muy pequeños */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .header__list {
+        gap: 0.8rem;
+        margin-top: 1rem;
+    }
+}   
