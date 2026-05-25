@@ -1,0 +1,11 @@
+# Capa 1: La imagen base
+FROM ubuntu:latest 	
+
+RUN apt-get update && \
+    apt-get install -y curl && \
+    rm -rf /var/lib/apt/lists/* 
+
+COPY . /app 	
+
+#Capa 5: Ejecuta un comando de terminal
+CMD ["echo", "Hello World"]
